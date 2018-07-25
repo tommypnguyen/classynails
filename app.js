@@ -5,11 +5,18 @@ var express    = require('express'),
     bodyParser = require("body-parser"),
     mongoose   = require("mongoose");
     
-    
+
+//requiring routes
+var indexRoutes= require("./routes/index");
+
+
 var url = process.env.DATABASEURL || "mongodb://localhost/classy_nails"
 mongoose.connect(url);
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", 'ejs');
+
+
+app.use("/", indexRoutes);
 
 
 app.listen(process.env.PORT, process.env.IP, function(){
