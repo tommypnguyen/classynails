@@ -3,6 +3,7 @@ require('dotenv').config()
 var express    = require('express'),
     app        = express(),
     bodyParser = require("body-parser"),
+    nodemailer = require("nodemailer"),
     mongoose   = require("mongoose");
     
 
@@ -15,6 +16,8 @@ mongoose.connect(url, { useNewUrlParser: true });
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", 'ejs');
 app.use(express.static(__dirname + "/public"));
+
+
 
 
 app.use("/", indexRoutes);
