@@ -1,6 +1,52 @@
 <% include ./partials/header %>
 
-<h1>
-    This is the work page
-</h1>
-<% include ./partials/footer %>
+    <div class="jumbotron">
+        <h1>Gallery</h1>
+        <p>View the work by our talented Artists</p>
+    </div>
+    
+    <!--Create the lightbox body-->
+    <a href="#_" class="lightbox" id="">
+        <img src="" id="lightbox">
+    </a>
+    
+    <div class="row">
+        <div class=" col-md-6 col-lg-4 col-sm-6">
+            <!--Anchor tag to make images enlarge on click-->
+            <a href="#img1">
+                <img  id="img1" class="img-thumbnail" src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d4147a2e4e3f79299e2f0c92b13db9ee&auto=format&fit=crop&w=2134&q=80">
+            </a>
+        </div>
+        <div class=" col-md-6 col-lg-4 col-sm-6">
+            <a href="#img2">
+                <img id="img2" class="img-thumbnail" src="https://images.unsplash.com/photo-1465189684280-6a8fa9b19a7a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=29640b60327a3b66e91817e39adc433a&auto=format&fit=crop&w=1350&q=80">
+            </a>
+        </div>
+        <div class=" col-md-6 col-lg-4 col-sm-6">
+            <a href="#img3">
+                <img id="img3" class="img-thumbnail" src="https://images.unsplash.com/photo-1439853949127-fa647821eba0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61558dee600463841f0a9f6692c11767&auto=format&fit=crop&w=634&q=80">
+            </a>
+        </div>
+        
+    </div>
+
+</div>
+        <!-- jQuery CDN -->
+        <!--Allows drop down menu-->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!--Script for picture lightbox-->
+        <script type="text/javascript">
+        // Whenever a thumbnail is clicked, the img src and id will be dynamically given to the lightbox div
+            $(document).on('click','.img-thumbnail', function(){
+                $("#lightbox").attr('src',this.src);
+                $('.lightbox').attr('id',this.id);
+            })
+        </script>
+    </body>
+</html>
+
+
+
+
