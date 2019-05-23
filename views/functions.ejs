@@ -1,0 +1,52 @@
+<%
+     checkDay = function(){
+        if (day === 6 || day === 0){
+            return true
+        } else{
+            return false
+        }
+    };
+%>
+
+<!--scheduling timing functions-->
+
+<!--converts given time string to seconds-->
+<%
+    timestrToSec = function(timestr){
+        var parts = timestr.split(":");
+        return (parts[0] * 3600) +
+               (parts[1] * 60)   +
+               (+parts[2]);
+    }
+%>
+
+<!--pads time if less than 10-->
+<% 
+    pad = function(num){
+        if(num < 10){
+            return "0" + num;
+        } else {
+            return "" + num;
+        }
+    }
+%>
+
+<!--formats time from seconds to hours and such-->
+
+
+<%
+   formatTime = function(seconds){
+        return [pad(Math.floor(seconds/3600)%60),
+                pad(Math.floor(seconds/60)%60),
+                ].join(":");
+    }
+%>
+<!--Takes time of appointment and length of procedure(s) to calculate height of event box-->
+<%
+    appointmentTime = function(appointmentStart, procedureLength){
+        procedureLength = procedureLength * 60
+        return formatTime(timestrToSec(appointmentStart) +(procedureLength))
+    }
+
+%>
+

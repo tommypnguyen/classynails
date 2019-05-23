@@ -1,34 +1,45 @@
 <% include ./partials/header %>
-
-    <div class="jumbotron">
-        <h1>Gallery</h1>
-        <p>View the work by our talented Artists</p>
-    </div>
+<!--Script for FB Social Plugin-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!--<div class="jumbotron">-->
+    <!--    <h1>Gallery</h1>-->
+    <!--    <p>View the work by our talented Artists</p>-->
+    <!--</div>-->
     
     <!--Create the lightbox body-->
     <a href="#_" class="lightbox" id="">
         <img src="" id="lightbox">
     </a>
     
-    <div class="row">
-        <div class=" col-md-6 col-lg-4 col-sm-6">
+    <div class='embedsocial-album' data-ref="8f9260fa67a97667269a32e824658cce81a845bd"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/ei.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialScript"));</script>
+    
+    <!--<div class="row">-->
+    <!--    <div class=" col-md-6 col-lg-4 col-sm-6">-->
             <!--Anchor tag to make images enlarge on click-->
-            <a href="#img1">
-                <img  id="img1" class="img-thumbnail" src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d4147a2e4e3f79299e2f0c92b13db9ee&auto=format&fit=crop&w=2134&q=80">
-            </a>
-        </div>
-        <div class=" col-md-6 col-lg-4 col-sm-6">
-            <a href="#img2">
-                <img id="img2" class="img-thumbnail" src="https://images.unsplash.com/photo-1465189684280-6a8fa9b19a7a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=29640b60327a3b66e91817e39adc433a&auto=format&fit=crop&w=1350&q=80">
-            </a>
-        </div>
-        <div class=" col-md-6 col-lg-4 col-sm-6">
-            <a href="#img3">
-                <img id="img3" class="img-thumbnail" src="https://images.unsplash.com/photo-1439853949127-fa647821eba0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61558dee600463841f0a9f6692c11767&auto=format&fit=crop&w=634&q=80">
-            </a>
-        </div>
+    <!--        <a href="#img1">-->
+    <!--            <img  id="img1" class="img-thumbnail" src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d4147a2e4e3f79299e2f0c92b13db9ee&auto=format&fit=crop&w=2134&q=80">-->
+    <!--        </a>-->
+    <!--    </div>-->
+    <!--    <div class=" col-md-6 col-lg-4 col-sm-6">-->
+    <!--        <a href="#img2">-->
+    <!--            <img id="img2" class="img-thumbnail" src="https://images.unsplash.com/photo-1465189684280-6a8fa9b19a7a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=29640b60327a3b66e91817e39adc433a&auto=format&fit=crop&w=1350&q=80">-->
+    <!--        </a>-->
+    <!--    </div>-->
+    <!--    <div class=" col-md-6 col-lg-4 col-sm-6">-->
+    <!--        <div class="fb-post" data-href="https://www.facebook.com/ClassyNailsSP/photos/a.452428691436169/452428968102808/?type=3&amp;theater" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/ClassyNailsSP/photos/a.452428691436169/452428968102808/?type=3" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/ClassyNailsSP/">Classy Nails</a> on&nbsp;<a href="https://www.facebook.com/ClassyNailsSP/photos/a.452428691436169/452428968102808/?type=3">Friday, June 15, 2012</a></blockquote></div>-->
+            <!--<a href="#img3">-->
+            <!--    <img id="img3" class="img-thumbnail" src="https://images.unsplash.com/photo-1439853949127-fa647821eba0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61558dee600463841f0a9f6692c11767&auto=format&fit=crop&w=634&q=80">-->
+            <!--</a>-->
+    <!--    </div>-->
         
-    </div>
+    <!--</div>-->
 
 </div>
         <!-- jQuery CDN -->

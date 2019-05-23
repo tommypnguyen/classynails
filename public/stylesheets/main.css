@@ -1,3 +1,13 @@
+html{
+	position: relative;
+	min-height: 100%;
+}
+
+body{
+	margin-bottom: 150px;
+}
+
+
 .lightbox{
     display: none;
     /** Position and style */
@@ -25,3 +35,114 @@
 	/** Unhide lightbox **/
 	display: block;
 }
+
+.navbar-custom{
+	background-color: rgba(28,36,40,0.85);
+	box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+	width: 100% !important;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgb(255,255,255);
+    letter-spacing: .03rem;
+    text-transform: uppercase;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+    text-transform: uppercase;
+    letter-spacing: .03rem;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+.btn-success{
+    background-color: rgba(255,255,255,0.1) !important;
+    border-color: #ffffff;
+    transition: all .5s ease 0s;
+}
+
+
+.btn-success:hover, .btn-success:focus, .btn-success:active{
+	border-color: #ffffff !important;
+	background-color: #ffffff !important;
+	box-shadow: none !important;
+	color: rgba(0,0,0,0.8) !important;
+}
+
+.footer {
+	position: absolute;
+	width:100%;
+	bottom: 0;
+	padding-top: 1rem;
+	background-color: rgba(0,0,0, 0.8);
+	color: rgb(255,255,255);
+}
+
+.footer .address{
+	font-size: .79rem;
+	text-align: left;
+	letter-spacing: .03rem
+}
+
+
+
+.footer .fa{
+	line-height: 50px;
+	padding-right: 10px;
+}
+
+
+#appointment{
+	text-align: center;
+}
+
+.carousel-caption {
+left: 15%;
+top: 50% !important;
+transform: translateY(-50%);
+text-align: center;
+bottom: initial;
+}
+
+#landing-header{
+  text-transform: uppercase;
+  letter-spacing: .03rem;
+}
+
+#mission{
+	/*background-color: rgba(0,0,0, 0.8);*/
+	/*text-align: center;*/
+	/*color: rgb(255,255,255);*/
+	color: black;
+	padding: 1.5rem;
+}
+
+#mission h1{
+	text-align: center;
+}
+
+#mission h6{
+	color:rgba(0,0,0, 0.7);
+}
+
+#location{
+	text-align: center;
+	color: rgb(0,0,0);
+}
+#map {
+    width: 70%;
+    height: 400px;
+    background-color: grey;
+    margin: 0 auto 50px;
+}
+
+#hours{
+	color: rgba(0,0,0,0.7);
+}
+

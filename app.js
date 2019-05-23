@@ -3,9 +3,10 @@ require('dotenv').config()
 var express    = require('express'),
     app        = express(),
     bodyParser = require("body-parser"),
+    methodOverride = require("method-override"),
     nodemailer = require("nodemailer"),
     mongoose   = require("mongoose");
-    
+
 
 //requiring routes
 var indexRoutes= require("./routes/index");
@@ -23,6 +24,6 @@ app.use(express.static(__dirname + "/public"));
 app.use("/", indexRoutes);
 
 
-app.listen(process.env.PORT, process.env.IP, function(){
+app.listen(5000, function(){
     console.log("The Classy Nails Server Has Started!");
 });
